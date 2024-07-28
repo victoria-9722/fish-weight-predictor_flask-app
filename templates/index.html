@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body data-bs-theme="dark">
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <span class="fs-4">Fish Weight Predictor</span>
+          </a>
+        </header>
+    </div>
+    <div class="b-example-divider"></div>
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Vertically centered hero sign-up form</h1>
+            <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" action="/predict" method="post">
+                <div class="form-floating">
+                    <select class="form-select mb-2" id="Species" name="Species">
+                      <option selected>Select a species</option>
+                      <option value="1">Bream</option>
+                      <option value="2">Roach</option>
+                      <option value="3">Whitefish</option>
+                      <option value="4">Parkki</option>
+                      <option value="5">Perch</option>
+                      <option value="6">Pike</option>
+                      <option value="7">Smelt</option>
+                    </select>
+                    <label for="Species">Fish Species</label>
+                </div>
+                <div class="input-form d-inline-flex">
+                    <div class="form-floating mb-2">
+                        <input type="number" class="form-control" id="Length1" placeholder="Length 1" fdprocessedid="33jrcr" name="Length1" step="any">
+                        <label for="Length1">Length1</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                        <input type="number" class="form-control" id="Length2" placeholder="Length 2" fdprocessedid="pmxmo" name="Length2" step="any">
+                        <label for="Length2">Length2</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                        <input type="number" class="form-control" id="Length3" placeholder="Length 3" fdprocessedid="pmxmo" name="Length3" step="any">
+                        <label for="Length3">Length3</label>
+                    </div>
+                </div>
+              <div class="form-floating mb-2">
+                <input type="number" class="form-control" id="Height" placeholder="Height" fdprocessedid="pmxmo" name="Height" step="any">
+                <label for="Height">Height</label>
+              </div>
+              <div class="form-floating mb-2">
+                <input type="number" class="form-control" id="Width" placeholder="Width" fdprocessedid="pmxmo" name="Width" step="any">
+                <label for="Width">Width</label>
+              </div>
+              <button class="w-100 btn btn-lg btn-primary" type="submit" fdprocessedid="brfaqn">Predict</button>
+              <hr class="my-4">
+            </form>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

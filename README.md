@@ -1,6 +1,6 @@
 # Fish Weight Predictor
 
-This application has been deployed: 
+This application has been deployed: https://fish-weight-predictor.onrender.com
 
 This project is a Fish Weight Predictor web application. It allows users to predict the weight of a fish based on its species and various length measurements. The application is built using Flask for the backend and HTML/CSS with Bootstrap for the frontend. The machine learning model is trained using a dataset from Kaggle.
 
